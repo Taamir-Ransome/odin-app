@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Centauri';
+  src: url('fonts/Centauri.eot');
+  src: url('fonts/Centauri.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Centauri.woff2') format('woff2'),
+       url('fonts/Centauri.woff') format('woff'),
+       url('fonts/Centauri.otf')  format('truetype'),
+       url('fonts/Centauri.svg#Centauri') format('svg');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

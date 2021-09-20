@@ -1,0 +1,36 @@
+.progress-main {
+  display: grid;
+  grid-template-columns: 50px 200px 50px;
+  text-align: center;
+ }
+
+ .progress-bar {
+   grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 2;
+ }
+
+ .progress-one {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+ }
+
+.confidence-one {
+  font-family: Centauri, sans-serif;
+  color: #99d4fe;
+  font-size: .7rem;
+  font-weight: 400;
+  text-shadow:
+  0 0 5px  #24263b,
+  0 0 10px  #24263b,
+  0 0 20px #fff,
+  0 0 40px #99d4fe,
+  0 0 80px #99d4fe,
+  0 0 90px #99d4fe,
+  0 0 100px  #24263b,
+  0 0 150px  #24263b
+}
+

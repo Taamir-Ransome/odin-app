@@ -1,0 +1,110 @@
+.odin-btn {
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-family: Centauri, sans-serif;
+  outline: none;
+  color: #d5fdfd;
+  background: #1a2130;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+}
+
+.odin-btn:before {
+  content: '';
+  background: linear-gradient(45deg,
+    #fafcfc,
+    #ffd900,
+    #01fd7f,
+    #055cfe,
+    #3e00b3,
+    #c100fc, 
+    #fc0187, 
+    #7a0125,
+    #ffffff
+    );
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.odin-btn:active {
+  color: #1a2130;
+
+}
+
+.odin-btn:active:after {
+  background: transparent;
+}
+
+.odin-btn:hover:before {
+  opacity: 1;
+}
+
+.odin-btn:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #1a2130;
+  ;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.capture-btn, .reset-btn, .detect-btn {
+  margin: 3px;
+  font-size: .70rem;
+  width: 100px;
+  height: 20px;
+  outline: none;
+  z-index: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.capture-btn, .detect-start {
+  background-color:#1c1d26;
+  color: #acc5f4;
+}
+
+.detect-btn {
+  background-color: #3a4c75;
+  color: #b8c1f1;
+}
+
+.reset-btn {
+  background-color: rgb(245, 35, 35);
+}
+
+.detect-start {
+  margin: 3px;
+  font-size: .9rem;
+  width: 200px;
+  height: 50px;
+  outline: none;
+  z-index: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+}

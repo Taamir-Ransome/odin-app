@@ -1,0 +1,12 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: url('./components/images/odin-bg3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  width: 100vw;
+  height: 100vh;
+}
+

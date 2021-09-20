@@ -1,0 +1,28 @@
+.head-row {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.head-text {
+    font-family: Centauri, sans-serif;
+    color: #24263b;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-size: 6vw;
+    font-weight: 500;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #acc5f4,
+    0 0 15px #acc5f4,
+    0 0 20px #acc5f4,
+    0 0 25px #acc5f4,
+    0 0 30px #acc5f4,
+    0 0 40px #6e8edb,
+    0 0 50px #6e8edb,
+    0 0 60px #475276,
+    0 0 70px #475276;
+}
+
+
+  
